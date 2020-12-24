@@ -1,0 +1,41 @@
+.scroll-container {    
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    font-size: 18px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+
+    .scroll-button {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        
+        background-size: contain;
+        border: none;
+        outline: none;
+        margin-top: 20px;
+    }
+}
+
+.scroll-head {
+    @media(min-width: 1200px) {
+        display: flex;
+        button {
+            background-image: url(img/Arrow_white.svg);
+        }
+    } 
+}
+
+.scroll-about {
+    @media(min-width: 768px) {
+        display: flex;
+        padding-bottom: 40px;
+        color: #bebebe;
+        button {
+            background-image: url(img/Arrow_grey.svg);
+        }
+    }
+}

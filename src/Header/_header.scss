@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.App-header {
+  @media (min-width: 768px) {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 67px 53px;
+    background-image: url(img/BackgroundTablet.jpg);
+    background-size: 100% 100%;
+  }
+  @media (min-width: 1200px) {
+    background-image: url(img/Background.jpg);
+  }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 268px;
+    min-width: 320px;
+    background-image: url(img/BackgroundMobail.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 268px;
+}

@@ -1,0 +1,80 @@
+.menu-button {
+  @media (min-width: 768px) {
+    display: none;
+  }
+  cursor: pointer;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-top: 43px;
+  color: #f1f1f1;
+}
+
+.main-nav {
+  @media (min-width: 768px) {
+    transform: translateX(0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    height: 100px;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+  }
+  @media (min-width: 1300px) {
+    margin-bottom: 70px;
+  }
+    display: none;
+    width: 150px;
+    height: 100%;
+    background-color: rgba($color: #9c9c9c, $alpha: 0.4);
+    border-radius: 0 20px 0 0;
+    transition: transform 0.2s linear;
+    .nav-list {
+      @media (min-width: 768px) {
+        flex-direction: row;
+        width: 100%;
+        max-width: 600px;
+        margin: 0;
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-left: 40px;    
+      li {
+        @media (min-width: 768px) {
+          font-size: 24px;
+        }
+        list-style: none;
+        font-size: 18px;
+        .nav-list-item {
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #f1f1f1;
+        }
+      }
+    }
+  }
+
+  
+
+@keyframes slideIn{
+  from {
+      transform: translateX(-150%);
+  }
+  to {
+      // transform: translateX(0);
+      transform: translateX(0);
+  }
+}
+.open {
+  animation-name: slideIn;
+  animation-duration: 0.5s;
+  display: flex;
+}
+
+.show {
+  display: flex;
+
+  border-bottom: 1px solid #bebebe;
+}
